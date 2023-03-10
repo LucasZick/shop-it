@@ -15,8 +15,8 @@ class ProductItem extends StatelessWidget {
   Widget build(BuildContext context) {
     final scaffold = ScaffoldMessenger.of(context);
     return ListTile(
-      title: Text(product.title!),
-      leading: CircleAvatar(backgroundImage: NetworkImage(product.imageUrl!)),
+      title: Text(product.title),
+      leading: CircleAvatar(backgroundImage: NetworkImage(product.imageUrl)),
       trailing: Container(
         width: 100,
         child: Row(

@@ -90,8 +90,6 @@ class Auth with ChangeNotifier {
       return Future.value();
     }
 
-    print('passei');
-
     final expiryDate = DateTime.parse(userData["expiryDate"]);
     if (expiryDate.isBefore(DateTime.now())) {
       return Future.value();

@@ -71,9 +71,6 @@ class Products with ChangeNotifier {
   }
 
   Future<void> updateProduct(Product product) async {
-    if (product.id == null) {
-      return;
-    }
     final int index = _items.indexWhere((prod) => prod.id == product.id);
     if (index >= 0) {
       await http.patch(

@@ -5,19 +5,19 @@ import 'package:http/http.dart' as http;
 import 'package:shop/utils/constants.dart';
 
 class Product with ChangeNotifier {
-  final String? id;
-  final String? title;
+  final String id;
+  final String title;
   final String? description;
   final double? price;
-  final String? imageUrl;
+  final String imageUrl;
   bool isFavorite;
 
   Product({
-    this.id,
-    required String? this.title,
+    required this.id,
+    required String this.title,
     required String? this.description,
     required double? this.price,
-    required String? this.imageUrl,
+    required String this.imageUrl,
     bool this.isFavorite = false,
   });
 
