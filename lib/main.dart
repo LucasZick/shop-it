@@ -39,7 +39,7 @@ class MyApp extends StatelessWidget {
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'Minha Loja',
+        title: 'SHOP IT',
         theme: ThemeData(
             colorScheme:
                 ColorScheme.fromSwatch(primarySwatch: Colors.deepPurple)
